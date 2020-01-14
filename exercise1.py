@@ -18,5 +18,21 @@ else:
 tip_amount = total_bill_amount * tip_percent
 final_bill = tip_amount + total_bill_amount
 
-print(tip_amount)
-print(final_bill)
+# print(tip_amount)
+# print(final_bill)
+
+#Question 2
+should_split = ''
+
+while should_split != 'y' and should_split != 'n':
+    should_split = input('Would you like to split the check?(y/n): ').lower()
+
+if should_split == 'y':
+    how_many = int(input("how many people?: "))
+else:
+    print(tip_amount)
+    print(final_bill)
+
+each_person_pays = final_bill / how_many
+
+print("Each person pays: ", each_person_pays)
