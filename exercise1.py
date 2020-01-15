@@ -37,24 +37,25 @@
 
 # print("Each person pays: ", each_person_pays)
 
-#Question 3
-print("You have 0 coins.")
-coins = 0
-response = ''
+# #Question 3
+# print("You have 0 coins.")
+# coins = 0
+# response = ''
 
-while True:
-    response = input('Do you want another coin?: ').lower()
-    if response == 'yes':
-        coins += 1
-        print(f"You have {coins} coins.")
-    elif response == 'no':
-        break
-    else:
-        print('That is not a yes or no answer.')
+# while True:
+#     response = input('Do you want another coin?: ').lower()
+#     if response == 'yes':
+#         coins += 1
+#         print(f"You have {coins} coins.")
+#     elif response == 'no':
+#         break
+#     else:
+#         print('That is not a yes or no answer.')
 
-print(f"You have ended with {coins} coins.")
+# print(f"You have ended with {coins} coins.")
 
 # #Question 4
+#(other option is to multiply by the character)
 # width = input("Width?")
 # height = input("Height?")
 # counter = 0
@@ -92,14 +93,14 @@ print(f"You have ended with {coins} coins.")
 # """)
 
 #Question 6
-# first_number = 1
-# second_number = 1
+first_number = 1
+second_number = 1
 
-# while first_number <= 10:
-#     answer = first_number * second_number
-#     print(f'{first_number} * {second_number} = {answer}')
-#     if second_number == 10:
-#         first_number += 1
-#         second_number = 1
-#         print("")
-#     second_number += 1
+while first_number <= 10:
+    answer = first_number * second_number
+    print(f'{first_number} * {second_number} = {answer}')
+    if second_number == 10:
+        first_number += 1
+        second_number = 1
+        print("")
+    second_number += 1
