@@ -61,30 +61,30 @@
 
 # print(f"You have ended with {coins} coins.")
 
-#Question 4
-width = input("Width?")
-height = input("Height?")
-counter = 0
-width_string = ""
-height_string = ""
-height_space = ""
+# #Question 4
+# width = input("Width?")
+# height = input("Height?")
+# counter = 0
+# width_string = ""
+# height_string = ""
+# height_space = ""
 
-while counter < int(width):
-    width_string += '*'
-    counter += 1
+# while counter < int(width):
+#     width_string += '*'
+#     counter += 1
 
-counter = 0
-while counter < (int(width) - 2):
-    height_space += ' '
-    counter += 1
+# counter = 0
+# while counter < (int(width) - 2):
+#     height_space += ' '
+#     counter += 1
 
-counter = 0
-print(width_string)
-while counter < (int(height) - 2):
-    height_string = f"*{height_space}*"
-    print(height_string)
-    counter += 1
-print(width_string)
+# counter = 0
+# print(width_string)
+# while counter < (int(height) - 2):
+#     height_string = f"*{height_space}*"
+#     print(height_string)
+#     counter += 1
+# print(width_string)
 
 #Question 5
 # print("""
@@ -95,14 +95,14 @@ print(width_string)
 # """)
 
 #Question 6
-# first_number = 1
-# second_number = 1
+first_number = 1
+second_number = 1
 
-# while first_number <= 10:
-#     answer = first_number * second_number
-#     print(f'{first_number} * {second_number} = {answer}')
-#     if second_number == 10:
-#         first_number += 1
-#         second_number = 1
-#         print("")
-#     second_number += 1
+while first_number <= 10:
+    answer = first_number * second_number
+    print(f'{first_number} * {second_number} = {answer}')
+    if second_number == 10:
+        first_number += 1
+        second_number = 1
+        print("")
+    second_number += 1
