@@ -18,8 +18,8 @@
 # tip_amount = total_bill_amount * tip_percent
 # final_bill = tip_amount + total_bill_amount
 
-# # print(tip_amount)
-# # print(final_bill)
+# print(tip_amount)
+# print(final_bill)
 
 # #Question 2
 # should_split = ''
@@ -38,59 +38,52 @@
 # print("Each person pays: ", each_person_pays)
 
 #Question 3
-# print("You have 0 coins.")
-# coins = 0
-# response = ''
+print("You have 0 coins.")
+coins = 0
+response = ''
 
-# while True:
-#     response = input('Do you want another coin?: ').lower()
-#     if response == 'yes' or response == 'no':
-#         coins += 1
-#         print(f"You have {coins} coins.")
-#         break
-#     else:
-#         print('That is not a yes or no answer.')
+while True:
+    response = input('Do you want another coin?: ').lower()
+    if response == 'yes':
+        coins += 1
+        print(f"You have {coins} coins.")
+    elif response == 'no':
+        break
+    else:
+        print('That is not a yes or no answer.')
 
-# while response != 'no':
-#     response = input('Do you want another coin?: ').lower()
-#     if response == 'yes':
-#         coins += 1
-#         print(f"You have {coins} coins.")
-#     else:
-#         print('That is not a yes or no answer.')
-
-# print(f"You have ended with {coins} coins.")
+print(f"You have ended with {coins} coins.")
 
 # #Question 4
-width = input("Width?")
-height = input("Height?")
-counter = 0
-width_string = ""
-height_string = ""
-height_space = ""
+# width = input("Width?")
+# height = input("Height?")
+# counter = 0
+# width_string = ""
+# height_string = ""
+# height_space = ""
 
-while counter < int(width):
-    width_string += '*'
-    counter += 1
+# while counter < int(width):
+#     width_string += '*'
+#     counter += 1
 
-counter = 0
-while counter < (int(width) - 2):
-    height_space += ' '
-    counter += 1
-if int(width) == 1 and int(height) == 1:
-    print("*")
-elif int(height) == 1:
-    print(width_string)
-else:
-    counter = 0
-    print(width_string)
-    while counter < (int(height) - 2):
-        height_string = f"*{height_space}*"
-        print(height_string)
-        counter += 1
-    print(width_string)
+# counter = 0
+# while counter < (int(width) - 2):
+#     height_space += ' '
+#     counter += 1
+# if int(width) == 1 and int(height) == 1:
+#     print("*")
+# elif int(height) == 1:
+#     print(width_string)
+# else:
+#     counter = 0
+#     print(width_string)
+#     while counter < (int(height) - 2):
+#         height_string = f"*{height_space}*"
+#         print(height_string)
+#         counter += 1
+#     print(width_string)
 
-#Question 5
+# #Question 5
 # print("""
 #    *
 #   ***
