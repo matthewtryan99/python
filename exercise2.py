@@ -90,20 +90,29 @@
 # print(new_list)
 
 ##Question 3
-list1 = [[1,3,4, 3], [2,4,2, 4]]
-list2 = [[5,2,5,3], [1,0,2, 4]]
-new_list = []
-inner_list = []
+# list1 = [[1,3,4, 3], [2,4,2, 4]]
+# list2 = [[5,2,5,3], [1,0,2, 4]]
+# new_list = []
+# inner_list = []
 
 
-for outer in range(len(list1)):
-    for inner in range(len(list1[0])):
-        if len(list1[outer]) == len(list2[outer]):
-            answer = list1[outer][inner] + list2[outer][inner]
-            inner_list.append(answer)
-        else:
-            print("Your matrices are not the same size.")
-            break
-    new_list.append(inner_list)
-    inner_list = []
-print(new_list)
+# for outer in range(len(list1)):
+#     for inner in range(len(list1[0])):
+#         if len(list1[outer]) == len(list2[outer]):
+#             answer = list1[outer][inner] + list2[outer][inner]
+#             inner_list.append(answer)
+#         else:
+#             print("Your matrices are not the same size.")
+#             break
+#     new_list.append(inner_list)
+#     inner_list = []
+# print(new_list)
+
+##Question 4
+
+##Question 5
+leet_sentence = "I am a leet programmer"
+leet_list = list(leet_sentence)
+print(leet_list)
+for i in range(len(leet_list)):
+    if leet_list[i] == ''
