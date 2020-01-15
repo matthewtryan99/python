@@ -38,7 +38,6 @@
 # print("Each person pays: ", each_person_pays)
 
 #Question 3
-
 # print("You have 0 coins.")
 # coins = 0
 # response = ''
@@ -66,9 +65,22 @@
 
 
 #Question 5
-print("""
-   *
-  ***
- *****
-*******
-""")
+# print("""
+#    *
+#   ***
+#  *****
+# *******
+# """)
+
+#Question 6
+first_number = 1
+second_number = 1
+
+while first_number <= 10:
+    answer = first_number * second_number
+    print(f'{first_number} * {second_number} = {answer}')
+    if second_number == 10:
+        first_number += 1
+        second_number = 1
+        print("")
+    second_number += 1
