@@ -37,7 +37,7 @@
 
 # print("Each person pays: ", each_person_pays)
 
-#Question 4
+#Question 3
 
 # print("You have 0 coins.")
 # coins = 0
@@ -61,3 +61,14 @@
 #         print('That is not a yes or no answer.')
 
 # print(f"You have ended with {coins} coins.")
+
+#Question 4
+
+
+#Question 5
+print("""
+   *
+  ***
+ *****
+*******
+""")
