@@ -66,11 +66,24 @@
 
 ###Medium Questions
 ##Question 1
-list1 = [2, 4, 5]
-list2 = [2, 3, 6]
-answers = []
+# list1 = [2, 4, 5]
+# list2 = [2, 3, 6]
+# answers = []
 
-for num in range(len(list1)):
-    answer = list1[num] * list2[num]
-    answers.append(answer)
-print(answers)
+# for num in range(len(list1)):
+#     answer = list1[num] * list2[num]
+#     answers.append(answer)
+# print(answers)
+
+##Question 2
+list1 = [[1,3], [2,4]]
+list2 = [[5,2], [1,0]]
+new_list = []
+inner_list = []
+for outer in range(2):
+    for inner in range(2):
+        answer = list1[outer][inner] + list2[outer][inner]
+        inner_list.append(answer)
+    new_list.append(inner_list)
+    inner_list = []
+print(new_list)
