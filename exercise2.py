@@ -55,11 +55,22 @@
 # print(new_list)
 
 ##Question 8
-my_string = "This is my string"
-back_list = []
-my_string_list = list(my_string)
-while len(my_string_list) > 0:
-    last_letter = my_string_list.pop()
-    back_list.append(last_letter)
-back_string = "".join(back_list)
-print(back_string)
+# my_string = "This is my string"
+# back_list = []
+# my_string_list = list(my_string)
+# while len(my_string_list) > 0:
+#     last_letter = my_string_list.pop()
+#     back_list.append(last_letter)
+# back_string = "".join(back_list)
+# print(back_string)
+
+###Medium Questions
+##Question 1
+list1 = [2, 4, 5]
+list2 = [2, 3, 6]
+answers = []
+
+for num in range(len(list1)):
+    answer = list1[num] * list2[num]
+    answers.append(answer)
+print(answers)
