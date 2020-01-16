@@ -139,67 +139,90 @@
 # print(leet_sentence.lower())
 
 ##Question 6
+word = "spoon"
+word_list = list(word)
+
+for i in range(len(word_list)):
+    if word_list[i] == word_list[i + 1]:
+        if word_list[i] == 'a':
+            word_list.insert(i, 'a' * 3)
+            break
+        elif word_list[i] == 'e':
+            word_list.insert(i, 'e' * 3)
+            break
+        elif word_list[i] == 'i':
+            word_list.insert(i, 'i' * 3)
+            break
+        elif word_list[i] == 'o':
+            word_list.insert(i, 'o' * 3)
+            break
+        elif word_list[i] == 'u':
+            word_list.insert(i, 'u' * 3)
+            break
+
+final_word = "".join(word_list)
+print(final_word)
 
 ##Question 7
-cipher = "lbh zhfg hayrnea jung lbh unir yrnearq"
-cipher_list = list(cipher)
-decoded_list = []
-for i in cipher_list:
-    if i == 'a':
-        decoded_list.append('n')
-    elif i == 'b':
-        decoded_list.append('o')
-    elif i == 'c':
-        decoded_list.append('p')
-    elif i == 'd':
-        decoded_list.append('q')
-    elif i == 'e':
-        decoded_list.append('r')
-    elif i == 'f':
-        decoded_list.append('s')
-    elif i == 'g':
-        decoded_list.append('t')
-    elif i == 'h':
-        decoded_list.append('u')
-    elif i == 'i':
-        decoded_list.append('v')
-    elif i == 'j':
-        decoded_list.append('w')
-    elif i == 'k':
-        decoded_list.append('x')
-    elif i == 'l':
-        decoded_list.append('y')
-    elif i == 'm':
-        decoded_list.append('z')
-    elif i == 'n':
-        decoded_list.append('a')
-    elif i == 'o':
-        decoded_list.append('b')
-    elif i == 'p':
-        decoded_list.append('c')
-    elif i == 'q':
-        decoded_list.append('d')
-    elif i == 'r':
-        decoded_list.append('e')
-    elif i == 's':
-        decoded_list.append('f')
-    elif i == 't':
-        decoded_list.append('g')
-    elif i == 'u':
-        decoded_list.append('h')
-    elif i == 'v':
-        decoded_list.append('i')
-    elif i == 'w':
-        decoded_list.append('j')
-    elif i == 'x':
-        decoded_list.append('k')
-    elif i == 'y':
-        decoded_list.append('l')
-    elif i == 'z':
-        decoded_list.append('m')
-    elif i == ' ':
-        decoded_list.append(' ')
+# cipher = "lbh zhfg hayrnea jung lbh unir yrnearq"
+# cipher_list = list(cipher)
+# decoded_list = []
+# for i in cipher_list:
+#     if i == 'a':
+#         decoded_list.append('n')
+#     elif i == 'b':
+#         decoded_list.append('o')
+#     elif i == 'c':
+#         decoded_list.append('p')
+#     elif i == 'd':
+#         decoded_list.append('q')
+#     elif i == 'e':
+#         decoded_list.append('r')
+#     elif i == 'f':
+#         decoded_list.append('s')
+#     elif i == 'g':
+#         decoded_list.append('t')
+#     elif i == 'h':
+#         decoded_list.append('u')
+#     elif i == 'i':
+#         decoded_list.append('v')
+#     elif i == 'j':
+#         decoded_list.append('w')
+#     elif i == 'k':
+#         decoded_list.append('x')
+#     elif i == 'l':
+#         decoded_list.append('y')
+#     elif i == 'm':
+#         decoded_list.append('z')
+#     elif i == 'n':
+#         decoded_list.append('a')
+#     elif i == 'o':
+#         decoded_list.append('b')
+#     elif i == 'p':
+#         decoded_list.append('c')
+#     elif i == 'q':
+#         decoded_list.append('d')
+#     elif i == 'r':
+#         decoded_list.append('e')
+#     elif i == 's':
+#         decoded_list.append('f')
+#     elif i == 't':
+#         decoded_list.append('g')
+#     elif i == 'u':
+#         decoded_list.append('h')
+#     elif i == 'v':
+#         decoded_list.append('i')
+#     elif i == 'w':
+#         decoded_list.append('j')
+#     elif i == 'x':
+#         decoded_list.append('k')
+#     elif i == 'y':
+#         decoded_list.append('l')
+#     elif i == 'z':
+#         decoded_list.append('m')
+#     elif i == ' ':
+#         decoded_list.append(' ')
 
-decoded = ''.join(decoded_list)
+# decoded = ''.join(decoded_list)
 
-print(decoded)
+# print(decoded)
