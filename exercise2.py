@@ -109,24 +109,33 @@
 # print(new_list)
 
 ##Question 4
+lst = [1, 5, 4, 5, 2, 5, 1, 3, 0, 8, 8, 3, 9]
+new_lst = []
+for i in lst:
+    if i not in new_lst:
+        new_lst.append(i)
+print(lst)
+print(new_lst)
 
 ##Question 5
-normal_sentence = "I am a leet programmer".upper()
-leet_list = list(normal_sentence)
-for i in range(len(leet_list)):
-    if leet_list[i] == 'A':
-        leet_list[i] = '4'
-    elif leet_list[i] == 'E':
-        leet_list[i] = '3'
-    elif leet_list[i] == 'G':
-        leet_list[i] = '6'
-    elif leet_list[i] == 'I':
-        leet_list[i] = '1'
-    elif leet_list[i] == 'O':
-        leet_list[i] = '0'
-    elif leet_list[i] == 'S':
-        leet_list[i] = '5'
-    elif leet_list[i] == 'T':
-        leet_list[i] = '7'
-leet_sentence = "".join(leet_list)
-print(leet_sentence.lower())
+# normal_sentence = "I am a leet programmer".upper()
+# leet_list = list(normal_sentence)
+# for i in range(len(leet_list)):
+#     if leet_list[i] == 'A':
+#         leet_list[i] = '4'
+#     elif leet_list[i] == 'E':
+#         leet_list[i] = '3'
+#     elif leet_list[i] == 'G':
+#         leet_list[i] = '6'
+#     elif leet_list[i] == 'I':
+#         leet_list[i] = '1'
+#     elif leet_list[i] == 'O':
+#         leet_list[i] = '0'
+#     elif leet_list[i] == 'S':
+#         leet_list[i] = '5'
+#     elif leet_list[i] == 'T':
+#         leet_list[i] = '7'
+# leet_sentence = "".join(leet_list)
+# print(leet_sentence.lower())
+
+##Question 6
