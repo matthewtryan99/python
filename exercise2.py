@@ -90,23 +90,27 @@
 # print(new_list)
 
 ##Question 3
-# list1 = [[1,3,4, 3], [2,4,2, 4]]
-# list2 = [[5,2,5,3], [1,0,2, 4]]
+# list1 = [[1,3,4,3], [2,4,2]]
+# list2 = [[5,2,5,3], [1,0,3]]
 # new_list = []
 # inner_list = []
+# not_same_amount = False
 
 
 # for outer in range(len(list1)):
-#     for inner in range(len(list1[0])):
+#     for inner in range(len(list1[outer])):
 #         if len(list1[outer]) == len(list2[outer]):
 #             answer = list1[outer][inner] + list2[outer][inner]
 #             inner_list.append(answer)
 #         else:
-#             print("Your matrices are not the same size.")
+#             not_same_amount = True
 #             break
 #     new_list.append(inner_list)
 #     inner_list = []
-# print(new_list)
+# if not_same_amount:
+#     print("Matrices are not the same size")
+# else:
+#     print(new_list)
 
 ##Question 4
 # lst = [1, 5, 4, 5, 2, 5, 1, 3, 0, 8, 8, 3, 9]
@@ -139,29 +143,29 @@
 # print(leet_sentence.lower())
 
 ##Question 6
-word = "spoon"
-word_list = list(word)
+# word = "spoon"
+# word_list = list(word)
 
-for i in range(len(word_list)):
-    if word_list[i] == word_list[i + 1]:
-        if word_list[i] == 'a':
-            word_list.insert(i, 'a' * 3)
-            break
-        elif word_list[i] == 'e':
-            word_list.insert(i, 'e' * 3)
-            break
-        elif word_list[i] == 'i':
-            word_list.insert(i, 'i' * 3)
-            break
-        elif word_list[i] == 'o':
-            word_list.insert(i, 'o' * 3)
-            break
-        elif word_list[i] == 'u':
-            word_list.insert(i, 'u' * 3)
-            break
+# for i in range(len(word_list)):
+#     if word_list[i] == word_list[i + 1]:
+#         if word_list[i] == 'a':
+#             word_list.insert(i, 'a' * 3)
+#             break
+#         elif word_list[i] == 'e':
+#             word_list.insert(i, 'e' * 3)
+#             break
+#         elif word_list[i] == 'i':
+#             word_list.insert(i, 'i' * 3)
+#             break
+#         elif word_list[i] == 'o':
+#             word_list.insert(i, 'o' * 3)
+#             break
+#         elif word_list[i] == 'u':
+#             word_list.insert(i, 'u' * 3)
+#             break
 
-final_word = "".join(word_list)
-print(final_word)
+# final_word = "".join(word_list)
+# print(final_word)
 
 ##Question 7
 # cipher = "lbh zhfg hayrnea jung lbh unir yrnearq"
