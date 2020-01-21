@@ -30,7 +30,18 @@ ramit = {
     }
 ]
 }
-print(ramit['email'])
-print(ramit['interests'][0])
-print(ramit['friends'][0]['email'])
-print(ramit['friends'][1]['interests'][1])
+# print(ramit['email'])
+# print(ramit['interests'][0])
+# print(ramit['friends'][0]['email'])
+# print(ramit['friends'][1]['interests'][1])
+
+##Question 3
+def friend_count(diction):
+    diction['friend_count'] = 0
+    for i in range(len(diction['friends'])):
+        diction['friend_count'] += 1
+    return diction
+
+new_dict = friend_count(ramit)
+
+print(new_dict['friend_count'])
