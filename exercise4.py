@@ -12,7 +12,7 @@
 
 # print(my_dict)
 
-# ##Question 2
+# ##Small Question 2
 # ramit = {
 # 'name': 'Ramit',
 # 'email': 'ramit@gmail.com',
@@ -35,7 +35,7 @@
 #  print(ramit['friends'][0]['email'])
 #  print(ramit['friends'][1]['interests'][1])
 
-##Question 3
+##Small Question 3
 # def friend_count(diction):
 #     diction['friend_count'] = 0
 #     for i in range(len(diction['friends'])):
@@ -47,6 +47,19 @@
 # print(new_dict['friend_count'])
 
 ##Question 2
+# input_word = input("Input a sentence: ")
+# input_list = input_word.split()
+# my_dict = {}
+
+# for i in range(len(input_list)):
+#     if input_list[i] not in my_dict:
+#         my_dict[input_list[i]] = 1
+#     else:
+#         my_dict[input_list[i]] += 1
+
+# print(my_dict)
+
+##Question 3
 input_word = input("Input a sentence: ")
 input_list = input_word.split()
 my_dict = {}
@@ -57,4 +70,40 @@ for i in range(len(input_list)):
     else:
         my_dict[input_list[i]] += 1
 
-print(my_dict)
+dict_tuple = my_dict.items()
+test_value = 0
+test_key = ''
+new_lst = [[0,0],[0,0],[0,0]]
+i = 0
+
+
+
+# for key, value in dict_tuple:
+#     if key != new_lst[0][0] or key != new_lst[1][0] or key != new_lst[2][0]:
+#         if value >= test_value and i < 3:
+#             test_value = value
+#             test_key = key
+#             i += 1
+#         elif i >= 3:
+#             break
+#         new_lst[i - 1][0] = test_key
+#         new_lst[i - 1][1] = test_value
+#     test_value = 0
+
+
+    # new_lst.append([test_key, test_value])
+
+# print(new_lst[:3])
+
+# def top_words(tple, i):
+#     for key, value in tple:
+#         if key != new_lst[i][0] or key != new_lst[1][0] or key != new_lst[2][0]:
+#             if value >= test_value and i < 3:
+#                 test_value = value
+#                 test_key = key
+#                 i += 1
+#             elif i >= 3:
+#                 break
+#             new_lst[i - 1][0] = test_key
+#             new_lst[i - 1][1] = test_value
+#         test_value = 0
