@@ -13,7 +13,7 @@ class Bank:
         self.name = name
         self.address = address
         self.account_holder = []
-        
+
     def add_account_holder(self, fname, mname, lname, account, balance, status):
         if balance >= 100:
             temp = AccountHolder(fname, mname, lname, account, balance, status)
@@ -31,14 +31,15 @@ class Bank:
             for x in self.account_holder:
                 if name1 == i.fname and name2 == x.fname:
                     if i.status != 'freeze' and i.status != 'closed':
-                        if i.balance >= transfer_amount:
-                            i.balance -= transfer_amount
-                            x.balance += transfer_amount
-                        else:
-                            i.balance -= transfer_amount
-                            x.balance += transfer_amount
-                            i.balance -= 35
-                            i.status = 'freeze'
+                        if i.status != 'closed':
+                            if i.balance >= transfer_amount:
+                                i.balance -= transfer_amount
+                                x.balance += transfer_amount
+                            else:
+                                i.balance -= transfer_amount
+                                x.balance += transfer_amount
+                                i.balance -= 35
+                                i.status = 'freeze'
                     else:
                         break
 
@@ -70,7 +71,7 @@ class Bank:
 def main():
     wellsFargo = Bank('wells fargo', '123 sesame street')
     action = 1
-    while action != 6:
+    while action != 7:
         print("1. Create Account")
         print("2. Check Account Holders")
         print("3. Transfer Balance")
